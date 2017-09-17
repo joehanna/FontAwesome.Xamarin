@@ -51,12 +51,14 @@ Forked from https://github.com/neilkennedy/FontAwesome.Xamarin</Description>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FontAwesome.cs" />
     <Compile Include="FABarButtonItem.cs" />
     <Compile Include="FontAwesomeException.cs" />
     <Compile Include="FAButton.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
