@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NuGet.Build.Packaging.0.1.276\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.276\build\NuGet.Build.Packaging.props')" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -16,15 +16,16 @@
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>joehanna.fontawesome</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>2.0.0</PackageVersion>
     <Authors>@joehanna_</Authors>
     <Owners>@joehanna_</Owners>
     <PackageProjectUrl>https://github.com/joehanna/FontAwesome.Xamarin</PackageProjectUrl>
     <PackageTags>Fontawesome</PackageTags>
     <Title>FontAwesome.Xamarin</Title>
-    <Description>Wrapper class around Font Awesome icons
+    <Description>Wrapper class around Font Awesome 5 icons
 
-Forked from https://github.com/neilkennedy/FontAwesome.Xamarin</Description>
+Forked from https://github.com/neilkennedy/FontAwesome.Xamarin and the class file was taken from https://github.com/fzany/Font-Awesome-Cheat-Charp</Description>
+    <ReleaseVersion>2.0.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,5 +65,5 @@ Forked from https://github.com/neilkennedy/FontAwesome.Xamarin</Description>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\packages\NuGet.Build.Packaging.0.1.276\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.276\build\NuGet.Build.Packaging.targets')" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
 </Project>
