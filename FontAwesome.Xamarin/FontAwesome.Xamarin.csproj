@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>joehanna.fontawesome</PackageId>
-    <PackageVersion>2.0.0</PackageVersion>
+    <PackageVersion>2.0.1</PackageVersion>
     <Authors>@joehanna_</Authors>
     <Owners>@joehanna_</Owners>
     <PackageProjectUrl>https://github.com/joehanna/FontAwesome.Xamarin</PackageProjectUrl>
@@ -25,7 +25,7 @@
     <Description>Wrapper class around Font Awesome 5 icons
 
 Forked from https://github.com/neilkennedy/FontAwesome.Xamarin and the class file was taken from https://github.com/fzany/Font-Awesome-Cheat-Charp</Description>
-    <ReleaseVersion>2.0.0</ReleaseVersion>
+    <ReleaseVersion>2.0.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

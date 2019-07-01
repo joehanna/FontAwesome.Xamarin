@@ -28,8 +28,24 @@ using UIKit;
 
 namespace FontAwesomeXamarin {
   public class FontAwesome {
-    public static UIFont Font(nfloat size) {
-      return UIFont.FromName("FontAwesome", size);
+
+    public enum FontStyle {
+      Regular,
+      Solid,
+      Brands
+    }
+
+    public static UIFont Font(nfloat size, FontStyle style = FontStyle.Regular) {
+
+      var style_text = style.ToString();
+      var prefix = "Free";
+      if (style == FontStyle.Brands) {
+        prefix = "Brands";
+        style_text = "Regular";
+      }
+
+      //return UIFont.FromName($"FontAwesome5Free-{style.ToString()}", size);
+      return UIFont.FromName($"FontAwesome5{prefix}-{style_text}", size);
     }
 
     //https://github.com/fzany/Font-Awesome-Cheat-Charp
